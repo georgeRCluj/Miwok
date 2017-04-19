@@ -1,0 +1,9 @@
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+
+    <!-- Sizes, paddings -->
+    <dimen name="main_categories_size">18sp</dimen>
+    <dimen name="left_padding">16dp</dimen>
+
+</resources>

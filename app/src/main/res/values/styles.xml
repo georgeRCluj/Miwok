@@ -1,0 +1,27 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <!-- Style for a category of vocabulary words -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/left_padding</item>
+        <item name="android:textColor">@color/main_categories_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/main_categories_size</item>
+    </style>
+
+    <!-- Style for words in default and miwok languages -->
+    <style name="WordsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/main_categories_color</item>
+        <item name="android:textSize">@dimen/main_categories_size</item>
+    </style>
+
+</resources>
