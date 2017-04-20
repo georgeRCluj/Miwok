@@ -14,6 +14,7 @@
         <item name="android:textColor">@color/main_categories_color</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/main_categories_size</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
     <!-- Style for words in default and miwok languages -->

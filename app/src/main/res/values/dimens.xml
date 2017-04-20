@@ -1,6 +1,8 @@
 <resources>
-    <!-- Height of each list item -->
+    <!-- Height of each list item & other dimensions-->
     <dimen name="list_item_height">88dp</dimen>
+    <dimen name="play_arrow_dimension">24dp</dimen>
+
 
     <!-- Sizes, paddings -->
     <dimen name="main_categories_size">18sp</dimen>
