@@ -12,8 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static android.support.v7.widget.StaggeredGridLayoutManager.TAG;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,7 +72,7 @@ public class ColorsFragment extends Fragment {
     /**
      * Clean up the media player by releasing its resources.
      */
-    private void releaseMediaPlayer() {
+    public void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
         if (mediaPlayer != null) {
             // Regardless of the current state of the media player, release its resources
@@ -88,9 +91,8 @@ public class ColorsFragment extends Fragment {
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        Log.v("COLORS FRAGMENT","ON STOP");
+    public void onPause() {
+        super.onPause();
         // When the activity is stopped, release the media player resources because we won't
         // be playing any more sounds.
         releaseMediaPlayer();
@@ -150,5 +152,4 @@ public class ColorsFragment extends Fragment {
         });
         return rootView;
     }
-
 }

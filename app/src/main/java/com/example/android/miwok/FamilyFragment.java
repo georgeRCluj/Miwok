@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -88,9 +89,8 @@ public class FamilyFragment extends Fragment {
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        Log.v("FAMILY FRAGMENT","ON STOP");
+    public void onPause() {
+        super.onPause();
         // When the activity is stopped, release the media player resources because we won't
         // be playing any more sounds.
         releaseMediaPlayer();
@@ -156,5 +156,4 @@ public class FamilyFragment extends Fragment {
         });
         return rootView;
     }
-
 }

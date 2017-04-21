@@ -13,8 +13,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static android.support.v7.widget.StaggeredGridLayoutManager.TAG;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -89,9 +92,8 @@ public class NumbersFragment extends Fragment {
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        Log.v("NUMBERS FRAGMENT","ON STOP");
+    public void onPause() {
+        super.onPause();
         // When the activity is stopped, release the media player resources because we won't
         // be playing any more sounds.
         releaseMediaPlayer();

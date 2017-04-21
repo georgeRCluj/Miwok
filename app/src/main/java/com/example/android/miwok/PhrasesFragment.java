@@ -12,8 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static android.support.v7.widget.StaggeredGridLayoutManager.TAG;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -88,9 +91,8 @@ public class PhrasesFragment extends Fragment {
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        Log.v("PHRASES FRAGMENT","ON STOP");
+    public void onPause() {
+        super.onPause();
         // When the activity is stopped, release the media player resources because we won't
         // be playing any more sounds.
         releaseMediaPlayer();
@@ -152,5 +154,4 @@ public class PhrasesFragment extends Fragment {
         });
         return rootView;
     }
-
 }

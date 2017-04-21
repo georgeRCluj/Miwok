@@ -3,9 +3,9 @@
     <dimen name="list_item_height">88dp</dimen>
     <dimen name="play_arrow_dimension">24dp</dimen>
 
-
     <!-- Sizes, paddings -->
     <dimen name="main_categories_size">18sp</dimen>
+    <dimen name="tab_text_size">16sp</dimen>
     <dimen name="left_padding">16dp</dimen>
 
 </resources>
