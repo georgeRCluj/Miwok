@@ -6,6 +6,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -89,7 +90,7 @@ public class PhrasesFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-
+        Log.v("PHRASES FRAGMENT","ON STOP");
         // When the activity is stopped, release the media player resources because we won't
         // be playing any more sounds.
         releaseMediaPlayer();
